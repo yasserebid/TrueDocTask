@@ -1,35 +1,35 @@
 # TrueDocTask
 
-Clone the repo
+1 - Clone the repo
 
-composer install
+2 - composer install
 
-create .env file :
+3 - create .env file :
 
- 1 - setup database confiuration
+ - setup database confiuration
 
- 2 - add MAIL_TO_ADDRESS:any mail you want . This will be the mail that you recieve the result mail on. (Important)
- 
-or you can use your mailtrap account for recieving email.
+ - add MAIL_TO_ADDRESS:any mail you want . This will be the mail that you recieve the result mail on. (Important)
 
-run php artisan migrate
+ or you can use your mailtrap account for recieving email.
 
-go to  /import-patients route
+4 - run php artisan migrate
 
-upload your xlsx file
+5 - go to  /import-patients route
 
-then if you on local server run  php artisan queue:listen --timeout=0
+6 - upload your xlsx file
+
+7 - then if you on local server run  php artisan queue:listen --timeout=0
 
 else if you already on production you should have a supervisor to run background queue
 
 
-Testing class is in  test/Feature/ValidationTest.php
+8 - Testing class is in  test/Feature/ValidationTest.php
 
-You can change the values of the row for testing
+9 - You can change the values of the row for testing
 
-To run testing unit on validation 
+10 - To run testing unit on validation 
 
-run .\vendor\bin\phpunit --filter testRowValidation
+      run .\vendor\bin\phpunit --filter testRowValidation
 
 
 Thank you
