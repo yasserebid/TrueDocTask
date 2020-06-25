@@ -5,9 +5,12 @@ Clone the repo
 composer install
 
 create .env file :
+
  1 - setup database confiuration
+
  2 - add MAIL_TO_ADDRESS:any mail you want . This will be the mail that you recieve the result mail on. (Important)
-     or you can use your mailtrap account for recieving email.
+ 
+or you can use your mailtrap account for recieving email.
 
 run php artisan migrate
 
