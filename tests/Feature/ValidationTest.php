@@ -16,7 +16,7 @@ class ValidationTest extends TestCase
     {
         $response = $this->post('validate-row', [
             "first_name" => "ii",
-            "second_name" => "",
+            "second_name" => "vcvcv",
             "family_name" => 'Ebid',
             "uid" => 123456,
         ]);
