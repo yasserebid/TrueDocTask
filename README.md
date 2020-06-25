@@ -21,8 +21,11 @@ else if you already on production you should have a supervisor to run background
 
 
 Testing class is in  test/Feature/ValidationTest.php
+
 You can change the values of the row for testing
+
 To run testing unit on validation 
+
 run .\vendor\bin\phpunit --filter testRowValidation
 
 
