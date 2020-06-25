@@ -30,4 +30,16 @@ class PatientsController extends Controller
         Excel::import(new ImportPatients($file_name), storage_path('app/' . $path));
         return redirect()->back()->with("message", "Thank you , the file has been stored for importing");
     }
+
+
+    public function validateRow(Request $request){
+        $request->validate([
+            "first_name" => 'required',
+            "second_name" => 'required',
+            "family_name" => 'required',
+            "uid" => 'required',
+        ]);
+
+        return true;
+    }
 }

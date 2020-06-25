@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/import-patients',"PatientsController@importPatients");
 
 Route::post('/upload',"PatientsController@upload");
+
+// This Route is for unit test
+Route::post('validate-row',"PatientsController@validateRow");

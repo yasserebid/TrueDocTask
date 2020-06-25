@@ -44,6 +44,17 @@ class ImportPatients implements ToModel, WithEvents, ShouldQueue, SkipsOnError, 
         ]);
     }
 
+    
+    public function rules(): array
+    {
+        return [
+            '0' => 'required',
+            '1' => 'required',
+            '2' => 'required',
+            '3' => 'required',
+        ];
+    }
+
     public function startRow(): int
     {
         return 2;
@@ -57,17 +68,6 @@ class ImportPatients implements ToModel, WithEvents, ShouldQueue, SkipsOnError, 
     public function chunkSize(): int
     {
         return 500;
-    }
-
-
-    public function rules(): array
-    {
-        return [
-            '0' => 'required',
-            '1' => 'required',
-            '2' => 'required',
-            '3' => 'required',
-        ];
     }
 
     public function onFailure(Failure ...$failures)
