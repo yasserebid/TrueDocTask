@@ -2,6 +2,7 @@
 # Introduction
 
 Number of Rejected Rows : {{$result["fail"]}}
+<br>
 Number of Accepted Rows : {{$result["success"]}}
 
 
