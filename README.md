@@ -8,6 +8,8 @@
 
  - setup database confiuration
 
+ - make QUEUE_CONNECTION=database
+
  - add MAIL_TO_ADDRESS:any mail you want . This will be the mail that you recieve the result mail on. (Important)
 
  or you can use your mailtrap account for recieving email.
