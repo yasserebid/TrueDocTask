@@ -29,7 +29,7 @@ else if you already on production you should have a supervisor to run background
 
 10 - To run testing unit on validation 
 
-      run .\vendor\bin\phpunit --filter testRowValidation
+       .\vendor\bin\phpunit --filter testRowValidation
 
 
 Thank you
