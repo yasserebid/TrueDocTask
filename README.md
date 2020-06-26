@@ -25,11 +25,11 @@
 else if you already on production you should have a supervisor to run background queue
 
 
-8 - Testing class is in  test/Feature/ValidationTest.php
+8 - Validation Testing class is in  test/Feature/ValidationTest.php
 
 9 - You can change the values of the row for testing
 
-10 - To run testing unit on validation 
+10 - To run a separate testing unit on validation 
 
        .\vendor\bin\phpunit --filter testRowValidation
 
